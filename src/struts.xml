@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.action.extension" value="" />
+<constant name="struts.objectFactory" value="spring"/>
+
+	<package name="connect" extends="struts-default" >
+		
+		<action name="deleteUserWithUserId" class="iosuserAction" method="deleteUserWithUserId">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="getUserWithUserId" class="iosuserAction" method="getUserWithUserId">
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="getConnectTest" class="iosuserAction" method="getConnectTest">
+		    <result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="registerIosuserWithUserInfor" class="iosuserAction" method="registerIosuserWithUserInfor">
+		    <result name="success">/index.jsp</result>
+		</action>
+		
+		<action name="userLoginAction" class="iosuserAction" method="userLoginAction">
+		    <result name="success">/index.jsp</result>
+		</action>
+		
+		
+		
+	</package>
+
+</struts>
