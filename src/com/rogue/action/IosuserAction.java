@@ -34,29 +34,6 @@ public class IosuserAction extends ActionSupport {
 	private String username;
 	private String password;
 	
-	public void getConnectTest() throws IOException {
-		
-		HttpServletResponse response = ServletActionContext.getResponse();
-		response.setContentType("application/json;charset=utf8");
-		Writer write = null;
-		
-		try {
-			
-			write = response.getWriter();
-			write.write("哈哈哈哈");
-			
-		} catch (IOException e) {
-			
-			e.printStackTrace();
-			
-		} finally {
-			
-			write.flush();
-			write.close();
-		}
-		
-	}
-	
 	@SuppressWarnings("unchecked")
 	public void userLoginAction() throws IOException {
 		HttpServletResponse response = ServletActionContext.getResponse();
